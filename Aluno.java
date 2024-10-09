@@ -2,12 +2,12 @@ import java.time.LocalDate; // Importa a classe LocalDate para trabalhar com dat
 import java.time.temporal.ChronoUnit; // Importa a classe ChronoUnit para calcular a diferença entre datas
 
 public class Aluno {
-    int id;
-    String nome;
-    LocalDate dataNascimento;
-    String cpf;
+    private int id;
+    private String nome;
+    private LocalDate dataNascimento;
+    private String cpf;
     Curso curso;
-    int idade;
+    private int idade;
 
     public Aluno(int id, String nome, LocalDate dataNascimento, String cpf, Curso curso) {
         this.id = id;

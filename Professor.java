@@ -1,9 +1,10 @@
 import java.util.ArrayList; // Importa a classe ArrayList para trabalhar com listas
 
 public class Professor {
-    int id;
-    String nome;
-    String departamento;
+    private int id;
+    private String nome;
+    private String departamento;
+    
     ArrayList<Curso> cursos = new ArrayList<>(); // Lista de cursos ministrados pelo professor
 
     public Professor(int id, String nome, String departamento) {
