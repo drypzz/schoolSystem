@@ -1,10 +1,11 @@
 import java.util.ArrayList;
 
 public class Curso {
-    int id;
-    String nome;
-    int cargaHoraria;
+    private int id;
+    private String nome;
+    private int cargaHoraria;
     Professor professor; // Professor responsável pelo curso
+    
     ArrayList<Aluno> alunos = new ArrayList<>(); // Lista de alunos matriculados no curso
 
     public Curso(int id, String nome, int cargaHoraria, Professor professor) {
