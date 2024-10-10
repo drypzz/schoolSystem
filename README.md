@@ -2,7 +2,7 @@
 
 ## 📰 Informações
 
-- version 1.0.11
+- version 1.0.33
 - author: @drypzz
 
 ---
