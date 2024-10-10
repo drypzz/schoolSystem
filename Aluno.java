@@ -21,19 +21,19 @@ public class Aluno {
     }
 
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public LocalDate getDataNascimento() {
-        return dataNascimento;
+        return this.dataNascimento;
     }
 
     public Curso getCurso() {
-        return curso;
+        return this.curso;
     }
 
     public int getIdade(LocalDate dataNascimento) { // Calcula a idade do aluno
@@ -47,6 +47,6 @@ public class Aluno {
     }
 
     public String toString() { // Retorna os dados do aluno
-        return "\nID: " + id + " | Nome: " + nome + " | Data de Nascimento: " + dataNascimento + " | Idade: " + idade + " | CPF: " + cpf + " | Curso: " + curso.getNome();
+        return "\nID: " + this.id + " | Nome: " + this.nome + " | Data de Nascimento: " + this.dataNascimento + " | Idade: " + this.idade + " | CPF: " + this.cpf + " | Curso: " + this.curso.getNome();
     }
 };

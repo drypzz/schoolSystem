@@ -14,6 +14,11 @@ public class Funcoes {
         int id = scanner.nextInt();
         scanner.nextLine();
 
+        if (professores.stream().anyMatch(e -> e.getId() == id)) { // Verifica se já existe um professor com o mesmo ID
+            System.out.println("\nProfessor já cadastrado.");
+            return;
+        }
+
         System.out.println("\nDigite o nome do Professor:");
         String nome = scanner.nextLine();
 
@@ -30,6 +35,11 @@ public class Funcoes {
         System.out.println("\nDigite o ID do Curso:");
         int id = scanner.nextInt();
         scanner.nextLine();
+
+        if (cursos.stream().anyMatch(e -> e.getId() == id)) { // Verifica se já existe um curso com o mesmo ID
+            System.out.println("\nCurso já cadastrado.");
+            return;
+        }
 
         System.out.println("\nDigite o nome do Curso:");
         String nome = scanner.nextLine();
@@ -62,6 +72,11 @@ public class Funcoes {
         System.out.println("\nDigite o ID do Aluno:");
         int id = scanner.nextInt();
         scanner.nextLine();
+
+        if (alunos.stream().anyMatch(e -> e.getId() == id)) { // Verifica se já existe um aluno com o mesmo ID
+            System.out.println("\nAluno já cadastrado.");
+            return;
+        }
 
         System.out.println("\nDigite o nome do Aluno:");
         String nome = scanner.nextLine();
@@ -113,10 +128,17 @@ public class Funcoes {
 
         for (Professor professor : professores) { // Lista os professores
             System.out.println(professor);
+            boolean associado = false; // Variável para verificar se o professor está associado a pelo menos um curso
             for (Curso curso : professor.getCursos()) { // Lista os cursos associados ao professor
                 System.out.println("Curso: " + curso.getNome() + " | Alunos no Curso: " + curso.getAlunos().size());
+                associado = true; // Marca que o professor está associado a pelo menos um curso
+            }
+
+            if (!associado) { // Verifica se o professor não está associado a nenhum curso
+                System.out.println("Curso: Nenhum curso associado ao professor.");
             }
         }
+
     }
 
     public void listarCursos() {

@@ -14,22 +14,22 @@ public class Professor {
     }
 
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public String getDepartamento() {
-        return departamento;
+        return this.departamento;
     }
 
     public ArrayList<Curso> getCursos() { // Retorna a lista de cursos ministrados pelo professor
-        return cursos;
+        return this.cursos;
     }
 
     public String toString() { // Retorna os dados do professor
-        return "\nID: " + id + " | Nome: " + nome + " | Departamento: " + departamento;
+        return "\nID: " + this.id + " | Nome: " + this.nome + " | Departamento: " + this.departamento;
     }
 }
