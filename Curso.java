@@ -18,26 +18,26 @@ public class Curso {
     }
 
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public int getCargaHoraria() {
-        return cargaHoraria;
+        return this.cargaHoraria;
     }
 
     public Professor getProfessor() {
-        return professor;
+        return this.professor;
     }
 
     public ArrayList<Aluno> getAlunos() { // Retorna a lista de alunos matriculados no curso
-        return alunos;
+        return this.alunos;
     }
 
     public String toString() { // Retorna os dados do curso
-        return "\nID: " + id + " | Curso: " + nome + " | Carga Horária: " + cargaHoraria + " | Professor: " + professor.getNome();
+        return "\nID: " + this.id + " | Curso: " + this.nome + " | Carga Horária: " + this.cargaHoraria + " | Professor: " + this.professor.getNome();
     }
 }
