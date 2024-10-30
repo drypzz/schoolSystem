@@ -7,7 +7,7 @@ public class Main {
         int opcao;
         
         do {
-            System.out.println("\n\nMenu:");
+            System.out.println("\n\n-----> Menu:");
             System.out.println("1 - Cadastrar Professor");
             System.out.println("2 - Cadastrar Curso");
             System.out.println("3 - Cadastrar Aluno");
@@ -20,22 +20,22 @@ public class Main {
 
             switch (opcao) {
                 case 1:
-                    funcoes.cadastrarProfessor();
+                    funcoes.cadastrarProfessor(); // Chama o método para cadastrar um professor
                     break;
                 case 2:
-                    funcoes.cadastrarCurso();
+                    funcoes.cadastrarCurso(); // Chama o método para cadastrar um curso
                     break;
                 case 3:
-                    funcoes.cadastrarAluno();
+                    funcoes.cadastrarAluno(); // Chama o método para cadastrar um aluno
                     break;
                 case 4:
-                    funcoes.listarProfessores();
+                    funcoes.listarProfessores(); // Chama o método para listar os professores
                     break;
                 case 5:
-                    funcoes.listarCursos();
+                    funcoes.listarCursos(); // Chama o método para listar os cursos
                     break;
                 case 6:
-                    funcoes.listarAlunos();
+                    funcoes.listarAlunos(); // Chama o método para listar os alunos
                     break;
                 case 0:
                     System.out.println("\nSaindo...");
@@ -45,11 +45,11 @@ public class Main {
             }
 
             if (opcao != 0) { // Pausa a execução para o usuário visualizar a mensagem
-                System.out.println("\nPressione Enter para continuar...");
+                System.out.println("\n\nPressione Enter para continuar...");
                 scanner.nextLine();
             }
         } while (opcao != 0);
         
         scanner.close();
-    }
+    };
 };
